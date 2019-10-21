@@ -22,11 +22,15 @@ def key_for_min_value(name_hash)
       initial_key = key
       initial_val = val
     # elsif #compare if val is greater then inital_val
-    elsif val < initial_val
+    elsif val < initial_val 
+      initial_key = key 
+      initial_val = val 
+    else 
+      initial_key = initial_key
+      initial_val = initial_val
     end
-
-    binding.pry
   end
 
   # return the key with the lowest value
+  inital
 end
