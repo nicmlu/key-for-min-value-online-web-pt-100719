@@ -12,7 +12,7 @@ def key_for_min_value(name_hash)
   initial_val = nil
 
   # can use collect/map iterator
-  name_hash.each doexit |key, val|  
+  name_hash.each do |key, val|  
     # 1) on the 1st iteration, want to reset inital vars value
     # 2) want to compare if val is greater then inital_val
     # || CONDITION && CONDITION 
@@ -22,6 +22,7 @@ def key_for_min_value(name_hash)
       initial_key = key
       initial_val = val
     # elsif #compare if val is greater then inital_val
+    elsif val < initial_val
     end
 
     binding.pry
