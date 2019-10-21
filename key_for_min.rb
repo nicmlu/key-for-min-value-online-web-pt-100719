@@ -30,7 +30,6 @@ def key_for_min_value(name_hash)
       initial_val = initial_val
     end
   end
-
   # return the key with the lowest value
-  inital
+  initial_key
 end
